@@ -42,7 +42,9 @@ nvim_tree.setup {
     mappings = {
       custom_only = false,
       list = {
-        -- user mappings go here
+        { key = { "h" }, action = "toggle_dotfiles", mode = "n"},
+        { key = { "K" }, action = "", mode = "n"},
+        { key = { "I" }, action = "", mode = "n"},
       },
     },
   },
