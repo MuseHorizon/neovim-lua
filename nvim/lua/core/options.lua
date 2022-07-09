@@ -33,6 +33,7 @@ opt.termguicolors = true    -- Enable 24-bit RGB colors
 opt.laststatus=3            -- Set global statusline
 opt.wrap = false
 opt.hlsearch = false
+opt.scrolloff = 8
 
 -----------------------------------------------------------
 -- Tabs, indent
