@@ -67,7 +67,7 @@ map('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
 
 -- Tagbar
-map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close
+-- map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close
 
 -----------------------------------------------------------
 -- MuseHorizon
@@ -98,6 +98,7 @@ map('n', 'gb', '<C-o>')
 map('n', 'gf', '<C-i>')
 map('n', 'gi', 'gk')
 map('n', 'gk', 'gj')
+map('n', '<leader>z', ':set wrap!<CR>')
 
 -- FZF
 map('n', '<C-f>', ':FZF<CR>')
