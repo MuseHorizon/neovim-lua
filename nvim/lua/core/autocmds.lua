@@ -45,7 +45,7 @@ autocmd('Filetype', {
   pattern = { 'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
     'yaml', 'lua'
   },
-  command = 'setlocal shiftwidth=2 tabstop=2'
+  command = 'setlocal shiftwidth=4 tabstop=4'
 })
 
 -- Terminal settings:
