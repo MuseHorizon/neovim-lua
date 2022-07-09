@@ -28,7 +28,7 @@ map('i', 'jk', '<Esc>')
 map('i', 'kj', '<Esc>')
 
 -- Clear search highlighting with <leader> and c
-map('n', '<leader>c', ':nohl<CR>')
+-- map('n', '<leader>c', ':nohl<CR>')
 
 -- Toggle auto-indenting for code paste
 map('n', '<F2>', ':set invpaste paste?<CR>')
@@ -38,10 +38,9 @@ vim.opt.pastetoggle = '<F2>'
 map('n', '<leader>tk', '<C-w>t<C-w>K') -- change vertical to horizontal
 map('n', '<leader>th', '<C-w>t<C-w>H') -- change horizontal to vertical
 
--- Move around splits using Ctrl + {i,j,k,l}
+-- Move around splits using Ctrl + {j,k,l}
 map('n', '<C-j>', '<C-w>h')
-map('n', '<C-k>', '<C-w>j')
-map('n', '<C-i>', '<C-w>k')
+map('n', '<C-k>', '<C-w>w')
 map('n', '<C-l>', '<C-w>l')
 
 -- Reload configuration without restart nvim
@@ -102,4 +101,5 @@ map('n', 'gk', 'gj')
 
 -- FZF
 map('n', '<C-f>', ':FZF<CR>')
+map('n', '<C-H>', ":let $FZF_DEFAULT_COMMAND='find . \\! \\( -type d -path ./.git -prune \\) \\! -type d \\! -name ''*.tags'' -printf ''%P\\n'''<CR>")
 
