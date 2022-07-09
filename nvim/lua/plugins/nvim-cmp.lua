@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- Plugin: nvim-cmp
--- url: https://github.com/hrsh7th/nvim-cmpa
+-- url: https://github.com/hrsh7th/nvim-cmp
 
 
 local cmp_status_ok, cmp = pcall(require, 'cmp')
@@ -73,3 +73,10 @@ cmp.setup {
   },
 }
 
+-- Search completion
+cmp.setup.cmdline('/', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+      { name = 'buffer' }
+    }
+  })
