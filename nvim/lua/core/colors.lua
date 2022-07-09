@@ -12,6 +12,8 @@ if not status_ok then
   return
 end
 
+vim.cmd([[colorscheme vscode]])
+
 -- Note: The instruction to load the color scheme may vary.
 -- See the README of the selected color scheme for the instruction
 -- to use.
@@ -19,12 +21,10 @@ end
 
 -- OneDark styles: dark, darker, cool, deep, warm, warmer, light
 -- require('onedark').setup {
-  -- style = 'darker',
-  -- colors = { fg = '#b2bbcc' }, --default: #a0a8b7
+--   style = 'darker',
+--   colors = { fg = '#b2bbcc' }, --default: #a0a8b7
 -- }
 -- require('onedark').load()
-
-require('monokai').setup{}
 
 -- statusline color schemes:
 -- import with: require('colors').colorscheme_name
