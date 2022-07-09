@@ -111,10 +111,15 @@ return packer.startup(function(use)
 
   -- Comment
   use {
-      'terrortylor/nvim-comment',
-      config = function()
-          require('nvim_comment').setup()
-      end
+    'terrortylor/nvim-comment',
+    config = function()
+      require('nvim_comment').setup()
+    end
+  }
+
+  -- VSCode color
+  use {
+    'Mofiqul/vscode.nvim'
   }
 
   -- Automatically set up your configuration after cloning packer.nvim
