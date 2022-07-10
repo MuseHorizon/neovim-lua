@@ -99,6 +99,7 @@ map('n', 'gf', '<C-i>')
 map('n', 'gi', 'gk')
 map('n', 'gk', 'gj')
 map('n', '<leader>z', ':set wrap!<CR>')
+map('n', '<leader>q', ':q<CR>')
 
 -- FZF
 map('n', '<C-f>', ':FZF<CR>')
