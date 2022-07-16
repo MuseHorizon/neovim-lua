@@ -15,6 +15,8 @@ vim.g.mapleader = ' '
 
 -----------------------------------------------------------
 -- Neovim shortcuts
+-- Check mappings
+-- :verbose map [key]
 -----------------------------------------------------------
 
 -- Disable arrow keys
