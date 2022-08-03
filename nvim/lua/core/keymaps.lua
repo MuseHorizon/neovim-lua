@@ -104,7 +104,9 @@ map('n', 'gi', 'gk')
 map('n', 'gk', 'gj')
 map('n', '<leader>z', ':set wrap!<CR>')
 map('n', '<leader>q', ':q<CR>')
+map('n', '<c-w>', ':q<CR>')
 map('n', '<leader><Tab>', ':bnext<CR>')
+map('n', '<c-s>', ':w<CR>')
 
 -- FZF
 map('n', '<C-f>', ':FZF<CR>')
