@@ -130,6 +130,11 @@ return packer.startup(function(use)
       'jose-elias-alvarez/null-ls.nvim'
   }
 
+
+  use {
+      'junegunn/fzf'
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
