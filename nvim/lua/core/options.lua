@@ -58,7 +58,7 @@ opt.updatetime = 700        -- ms to wait for trigger an event
 -- Disable nvim intro
 opt.shortmess:append "sI"
 
--- -- Disable builtin plugins
+-- Disable builtin plugins
 local disabled_built_ins = {
    "2html_plugin",
    "getscript",
@@ -89,4 +89,18 @@ local disabled_built_ins = {
 
 for _, plugin in pairs(disabled_built_ins) do
    g["loaded_" .. plugin] = 1
+end
+
+-----------------------------------------------------------
+-- Suppress error messages from language servers
+-----------------------------------------------------------
+vim.notify = function(msg, log_level, _opts)
+    if msg:match("exit code") then
+        return
+    end
+    if log_level == vim.log.levels.ERROR then
+        vim.api.nvim_err_writeln(msg)
+    else
+        vim.api.nvim_echo({{msg}}, true, {})
+    end
 end
