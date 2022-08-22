@@ -23,8 +23,6 @@ indent_blankline.setup {
     'man',
     'dashboard',
     'git',
-    'markdown',
-    'text',
     'terminal',
     'NvimTree',
   },
