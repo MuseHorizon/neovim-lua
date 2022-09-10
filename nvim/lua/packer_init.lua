@@ -132,8 +132,13 @@ return packer.startup(function(use)
   }
 
 
+  -- FZF
   use {
       'junegunn/fzf'
+  }
+
+  use {
+      'kdheepak/lazygit.nvim'
   }
 
   -- Automatically set up your configuration after cloning packer.nvim

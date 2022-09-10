@@ -112,3 +112,5 @@ map('n', '<c-s>', ':w<CR>')
 map('n', '<C-f>', ':FZF<CR>')
 map('n', '<C-H>', ":let $FZF_DEFAULT_COMMAND='find . \\! \\( -type d -path ./.git -prune \\) \\! -type d \\! -name ''*.tags'' -printf ''%P\\n'''<CR>")
 
+-- Lazygit
+map('n', '<C-g>', ':LazyGit<CR>')
