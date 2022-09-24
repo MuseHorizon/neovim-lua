@@ -48,11 +48,14 @@ nvim_tree.setup {
     relativenumber = false,
     signcolumn = "yes",
     mappings = {
-      custom_only = false,
-      list = {
-        -- user mappings go here
-      },
-    },
+        custom_only = false,
+        list = {
+            { key = { "h" }, action = "toggle_dotfiles", mode = "n"},
+            { key = { "K" }, action = "", mode = "n"},
+            { key = { "I" }, action = "", mode = "n"},
+        },
+        },
+  },
     float = {
       enable = false,
       open_win_config = {
@@ -64,15 +67,6 @@ nvim_tree.setup {
       col = 1,
       },
     },
-    mappings = {
-        custom_only = false,
-        list = {
-            { key = { "h" }, action = "toggle_dotfiles", mode = "n"},
-            { key = { "K" }, action = "", mode = "n"},
-            { key = { "I" }, action = "", mode = "n"},
-        },
-        },
-  },
   renderer = {
     add_trailing = false,
     group_empty = false,
