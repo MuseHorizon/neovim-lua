@@ -56,17 +56,6 @@ nvim_tree.setup {
         },
         },
   },
-    float = {
-      enable = false,
-      open_win_config = {
-      relative = "editor",
-      border = "rounded",
-      width = 30,
-      height = 30,
-      row = 1,
-      col = 1,
-      },
-    },
   renderer = {
     add_trailing = false,
     group_empty = false,
