@@ -13,11 +13,7 @@ require('core/autocmds')
 require('core/keymaps')
 require('core/colors')
 require('core/statusline')
-<<<<<<< HEAD
-require('lsp/nvim-lspconfig')
-=======
 require('lsp/lspconfig')
->>>>>>> c17897d00d7c5bb67cb7b31afd5b059b098b98b4
 require('plugins/nvim-tree')
 require('plugins/indent-blankline')
 require('plugins/nvim-cmp')
